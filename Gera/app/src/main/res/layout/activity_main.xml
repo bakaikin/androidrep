@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".main"
+    android:background="@drawable/background">
+
+    <TextView
+        android:text="@string/touchme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/MarinaButton"
+        android:src="@drawable/marina"
+        android:onClick="OnMarinaClick"
+        android:layout_below="@+id/EgorButton"
+        android:layout_alignRight="@+id/NicolaButton"
+        android:layout_alignEnd="@+id/NicolaButton" />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/egor_gray"
+        android:onClick="OnEgorClick"
+        android:id="@+id/EgorButton"
+        android:layout_alignTop="@+id/TextView"
+        android:layout_alignRight="@+id/EugenButton"
+        android:layout_alignEnd="@+id/EugenButton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop"
+        android:id="@+id/stopbutton"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:onClick="StopOnClick"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/EugenButton"
+        android:src="@drawable/eugen"
+        android:onClick="OnEugenClick"
+        android:layout_above="@+id/NicolaButton"
+        android:layout_alignLeft="@+id/GeraButton"
+        android:layout_alignStart="@+id/GeraButton" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/NicolaButton"
+        android:src="@drawable/nikola"
+        android:onClick="OnClickNicola"
+        android:layout_above="@+id/GeraButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gpic"
+        android:onClick="OnGeraClick"
+        android:id="@+id/GeraButton"
+        android:layout_above="@+id/stopbutton"
+        android:layout_alignRight="@+id/stopbutton"
+        android:layout_alignEnd="@+id/stopbutton" />
+
+</RelativeLayout>
